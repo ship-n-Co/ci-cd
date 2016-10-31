@@ -14,6 +14,6 @@ node('local') {
         }
     }
     stage('Done') {
-        sh 'echo Done'
+        sh 'echo Done test2'
     }
 }
