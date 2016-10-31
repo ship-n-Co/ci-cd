@@ -1,6 +1,11 @@
 #!groovy
 
 node('local') {
+
+    stage('checkout') {
+        checkout scm
+    }
+
     stage('do something....') {
         dir('folder') {
             sh 'script.sh unknown place'
