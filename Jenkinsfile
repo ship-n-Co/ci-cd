@@ -18,7 +18,7 @@ node('local') {
             }
         }
     }
-    stage('....again but with params') {
+    stage('....again but with more params') {
         dir('folder') {
             withEnv(['param1=abcd', 'param2=dfghi']) {
                 sh "./script.sh ${env.param1} ${$env.param2}"
