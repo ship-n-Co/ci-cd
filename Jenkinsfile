@@ -3,7 +3,7 @@
 node('local') {
     stage('do something....') {
         dir('folder') {
-            sh './script.sh unknown place'
+            sh 'script.sh unknown place'
         }
     }
     stage('....again but with params') {
