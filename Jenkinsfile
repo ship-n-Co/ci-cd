@@ -1,6 +1,13 @@
 #!groovy
 
 node('local') {
+
+    properties([pipelineTriggers([[$class: 'GitHubPushTrigger']])])
+
+    stage('checkout') {
+        checkout scm
+    }
+
     stage('do something....') {
         dir('folder') {
             sh './script.sh unknown place'
